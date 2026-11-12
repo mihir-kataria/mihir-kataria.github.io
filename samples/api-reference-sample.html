@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIAG Backend API: Selected Endpoints · Mihir Kataria</title>
+<meta name="description" content="Reference pages for the endpoints that answer questions and escalate them to the discussion board, with parameters, examples, and errors.">
+<meta name="theme-color" content="#0b0d0e">
+<link rel="canonical" href="https://mihir-kataria.github.io/samples/api-reference-sample.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AIAG Backend API: Selected Endpoints · Mihir Kataria">
+<meta property="og:description" content="Reference pages for the endpoints that answer questions and escalate them to the discussion board, with parameters, examples, and errors.">
+<meta property="og:url" content="https://mihir-kataria.github.io/samples/api-reference-sample.html">
+<meta property="og:image" content="https://mihir-kataria.github.io/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement,t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t==='light'||t==='dark'){d.setAttribute('data-theme',t)}var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',d.getAttribute('data-theme')==='light'?'#f5f2eb':'#0b0d0e');d.classList.add('js');if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('motion');setTimeout(function(){if(!window.__mk)d.classList.remove('motion')},3000)}})();</script>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js" defer></script>
+<script src="../js/main.js" defer></script>
+<script src="../js/doc.js" defer></script>
+</head>
+<body class="doc-page">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+</svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="../index.html" aria-label="Mihir Kataria, home">
+      <span class="brand__mark" aria-hidden="true">MK</span>
+      <span class="brand__name">Mihir Kataria</span>
+    </a>
+    <a class="link-mono nav__back" href="/#samples"><span aria-hidden="true">←</span> Back to samples</a>
+    <div class="nav__actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn--sm" href="../assets/Mihir_Kataria_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <header class="doc-hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow"><span class="sec">Doc 02</span><span class="dot">·</span><span>API reference</span></p>
+      <h1 class="doc-title">AIAG Backend API: <em>Selected Endpoints</em></h1>
+      <div class="doc-meta">
+        <div class="tags"><span class="tag">Developers</span><span class="tag">REST</span><span class="tag">Flask</span></div>
+        <span class="mono">3 min read</span>
+      </div>
+      <p class="doc-note"><span class="mono">Note</span><span>Adapted from documentation I wrote for AIAG, an AI teaching assistant built at Arizona State University. Some details are simplified.</span></p>
+    </div>
+  </header>
+
+  <div class="container doc-layout">
+    <nav class="toc" aria-label="On this page">
+      <p class="mono side-label">On this page</p>
+      <ol><li><a href="#ask-a-question">Ask a question</a></li><li><a href="#post-a-question-to-the-discussion-board">Post a question to the discussion board</a></li><li><a href="#create-a-chat">Create a chat</a></li></ol>
+      <a class="link-mono toc__back" href="/#samples"><span aria-hidden="true">←</span> All samples</a>
+    </nav>
+    <article class="prose">
+<p>This page documents three AIAG backend endpoints: asking a question, posting an unanswered question to the course discussion board, and creating a chat. It's for frontend developers who call the backend. The browser sends the user's session cookie with every request.</p>
+<h2 id="ask-a-question"><span class="h-num" aria-hidden="true">§ 01</span>Ask a question</h2>
+<p><code>POST /api/similar_questions</code></p>
+<p>Checks that the question is about the course, retrieves the most similar passages from the course's knowledge base, and returns a generated answer with its sources.</p>
+<p><strong>Request body (JSON)</strong></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Required</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>question</code></td><td>string</td><td>Yes</td><td>The student's question, in English or Chinese.</td></tr><tr><td><code>history</code></td><td>array</td><td>Yes</td><td>Earlier exchanges in this chat, oldest first, as objects with <code>Question</code> and <code>Answer</code> strings. Send <code>[]</code> for a new chat.</td></tr><tr><td><code>language</code></td><td>string</td><td>Yes</td><td><code>en</code> for English or <code>zh</code> for Chinese. With <code>zh</code>, the question is translated into English for search and the sources into Chinese.</td></tr><tr><td><code>class</code></td><td>string</td><td>No</td><td>The course to search, when the user didn't open AIAG from a Canvas course.</td></tr><tr><td><code>activeContainer</code></td><td>string</td><td>Yes</td><td>Set to <code>asugpt</code>.</td></tr></tbody></table></div>
+<p><strong>Example request</strong></p>
+<div class="code-card"><div class="code-card__head"><span class="badge badge--neutral">JSON</span><span class="code-card__title"><span class="code-card__path">Example</span></span><button class="copy-btn" type="button" data-copy><svg class="icon" aria-hidden="true" width="13" height="13"><use href="#i-copy"/></svg><span>Copy</span></button></div><pre class="code" tabindex="0"><code><span class="p">{</span>
+  <span class="k">"question"</span><span class="p">:</span> <span class="s">"Can I use VS Code for the web services assignment?"</span><span class="p">,</span>
+  <span class="k">"history"</span><span class="p">:</span> <span class="p">[</span><span class="p">]</span><span class="p">,</span>
+  <span class="k">"language"</span><span class="p">:</span> <span class="s">"en"</span><span class="p">,</span>
+  <span class="k">"class"</span><span class="p">:</span> <span class="s">"DEMO 101"</span><span class="p">,</span>
+  <span class="k">"activeContainer"</span><span class="p">:</span> <span class="s">"asugpt"</span>
+<span class="p">}</span></code></pre></div>
+<p><strong>Response (status <code>200</code>)</strong></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Field</th><th scope="col">Type</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>gpt_result</code></td><td>string</td><td>The answer text.</td></tr><tr><td><code>engine_results</code></td><td>array</td><td>The passages used as sources. Empty when the question is off topic. Absent when no passages matched.</td></tr><tr><td><code>human_required</code></td><td>boolean</td><td><code>true</code> when no passages matched. The chat interface then offers to post the question to the discussion board.</td></tr><tr><td><code>message</code></td><td>string</td><td>The escalation prompt. Present only when <code>human_required</code> is <code>true</code>.</td></tr></tbody></table></div>
+<p><strong>Example response</strong></p>
+<div class="code-card"><div class="code-card__head"><span class="badge badge--neutral">JSON</span><span class="code-card__title"><span class="code-card__path">Example</span></span><button class="copy-btn" type="button" data-copy><svg class="icon" aria-hidden="true" width="13" height="13"><use href="#i-copy"/></svg><span>Copy</span></button></div><pre class="code" tabindex="0"><code><span class="p">{</span>
+  <span class="k">"gpt_result"</span><span class="p">:</span> <span class="s">"Yes. Any editor works, as long as your services build and run in the required framework."</span><span class="p">,</span>
+  <span class="k">"engine_results"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="k">"message"</span><span class="p">:</span> <span class="s">"Is VS Code OK instead of Visual Studio?"</span><span class="p">,</span> <span class="k">"updated_at"</span><span class="p">:</span> <span class="s">"2024-02-03T18:22:10Z"</span><span class="p">,</span>
+      <span class="k">"replies"</span><span class="p">:</span> <span class="p">[</span> <span class="p">{</span> <span class="k">"message"</span><span class="p">:</span> <span class="s">"Yes, any editor is fine."</span><span class="p">,</span> <span class="k">"updated_at"</span><span class="p">:</span> <span class="s">"2024-02-03T20:05:44Z"</span><span class="p">,</span> <span class="k">"replies"</span><span class="p">:</span> <span class="p">[</span><span class="p">]</span> <span class="p">}</span> <span class="p">]</span> <span class="p">}</span>
+  <span class="p">]</span><span class="p">,</span>
+  <span class="k">"human_required"</span><span class="p">:</span> <span class="n">false</span>
+<span class="p">}</span></code></pre></div>
+<p>An off-topic question returns an empty <code>engine_results</code> and a fixed refusal in <code>gpt_result</code>. If the OpenAI API fails after two retries, <code>gpt_result</code> is <code>OpenAI Unresponsive</code>.</p>
+<p><strong>Errors</strong></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Status</th><th scope="col">Cause</th><th scope="col">Body</th></tr></thead><tbody><tr><td><code>400</code></td><td><code>activeContainer</code> is missing or not a valid value</td><td><code>{"error": "Invalid activeContainer"}</code></td></tr><tr><td><code>500</code></td><td>A required field is missing</td><td>Error page</td></tr></tbody></table></div>
+<h2 id="post-a-question-to-the-discussion-board"><span class="h-num" aria-hidden="true">§ 02</span>Post a question to the discussion board</h2>
+<p><code>POST /api/create_discussion</code></p>
+<p>Creates a discussion topic from a question AIAG couldn't answer. The chat interface calls it after the student confirms they want to post.</p>
+<p><strong>Request body (multipart form data)</strong></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Required</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>question</code></td><td>string</td><td>Yes</td><td>The discussion title, from the <strong>Topic Title</strong> field.</td></tr><tr><td><code>body</code></td><td>string</td><td>No</td><td>The discussion text. Defaults to empty. The chat interface fills it with the student's question.</td></tr><tr><td><code>image</code></td><td>file</td><td>No</td><td>An image to attach to the end of the post.</td></tr><tr><td><code>course_id</code></td><td>string</td><td>No</td><td>The course whose discussion board receives the post.</td></tr></tbody></table></div>
+<p><strong>Example request fields:</strong> <code>course_id</code> = <code>&lt;COURSE_ID&gt;</code>, <code>question</code> = <code>Deploying assignment 2 to the course server</code>, <code>body</code> = <code>My deployment fails after I upload the build. What should I check first?</code></p>
+<p><strong>Example response (status <code>201</code>)</strong></p>
+<div class="code-card"><div class="code-card__head"><span class="badge badge--neutral">JSON</span><span class="code-card__title"><span class="code-card__path">Example</span></span><button class="copy-btn" type="button" data-copy><svg class="icon" aria-hidden="true" width="13" height="13"><use href="#i-copy"/></svg><span>Copy</span></button></div><pre class="code" tabindex="0"><code><span class="p">{</span>
+  <span class="k">"message"</span><span class="p">:</span> <span class="s">"Discussion with image created successfully"</span><span class="p">,</span>
+  <span class="k">"discussion_id"</span><span class="p">:</span> <span class="n">9001</span><span class="p">,</span>
+  <span class="k">"title"</span><span class="p">:</span> <span class="s">"Deploying assignment 2 to the course server"</span><span class="p">,</span>
+  <span class="k">"body"</span><span class="p">:</span> <span class="s">"My deployment fails after I upload the build. What should I check first?"</span><span class="p">,</span>
+  <span class="k">"posted_at"</span><span class="p">:</span> <span class="s">"2025-03-18T21:04:55Z"</span><span class="p">,</span>
+  <span class="k">"html_url"</span><span class="p">:</span> <span class="s">"&lt;DISCUSSION_URL&gt;"</span>
+<span class="p">}</span></code></pre></div>
+<p>The <code>message</code> text is the same whether or not an image is attached.</p>
+<p><strong>Errors</strong></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Status</th><th scope="col">Cause</th><th scope="col">Body</th></tr></thead><tbody><tr><td><code>400</code></td><td>The discussion board rejected the post, for example because the title is missing</td><td><code>{"error": "&lt;reason&gt;"}</code></td></tr></tbody></table></div>
+<h2 id="create-a-chat"><span class="h-num" aria-hidden="true">§ 03</span>Create a chat</h2>
+<p><code>POST /chats</code></p>
+<p>Creates an empty chat for the signed-in user. The chat interface calls it when the student selects <strong>New Chat</strong>, and on a first visit.</p>
+<p><strong>Request body (JSON)</strong></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Required</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>chatname</code></td><td>string</td><td>Yes</td><td>The name shown in the sidebar.</td></tr></tbody></table></div>
+<p><strong>Example:</strong> the request <code>{ "chatname": "new chat" }</code> returns status <code>201</code> with <code>{ "message": "Chat added successfully", "chatID": 42 }</code>.</p>
+<p><strong>Errors</strong></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Status</th><th scope="col">Cause</th><th scope="col">Body</th></tr></thead><tbody><tr><td><code>401</code></td><td>No user is signed in</td><td><code>{"error": "User not authenticated"}</code></td></tr><tr><td><code>500</code></td><td><code>chatname</code> is missing</td><td>Error page</td></tr></tbody></table></div>
+      <nav class="pager" aria-label="More samples">
+        <a class="prev" href="architecture-overview.html"><span class="mono">← Previous · Doc 01</span><strong>How AIAG Answers a Question</strong></a>
+        <a class="next" href="student-quick-start.html"><span class="mono">Next → · Doc 03</span><strong>AIAG Quick Start for Students</strong></a>
+      </nav>
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="mono">© 2026 Mihir Kataria · Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+    <a class="mono" href="#main">Back to top <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+<div class="sr-only" aria-live="polite" id="live"></div>
+</body>
+</html>
