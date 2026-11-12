@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mihir Kataria · Technical Writer</title>
+<meta name="description" content="Mihir Kataria is a technical writer with a computer science degree from Arizona State University, writing API documentation, user manuals, release notes, and setup guides.">
+<meta name="theme-color" content="#0b0d0e">
+<link rel="canonical" href="https://mihir-kataria.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mihir Kataria">
+<meta property="og:title" content="Mihir Kataria · Technical Writer">
+<meta property="og:description" content="Mihir Kataria is a technical writer with a computer science degree from Arizona State University, writing API documentation, user manuals, release notes, and setup guides.">
+<meta property="og:url" content="https://mihir-kataria.github.io/">
+<meta property="og:image" content="https://mihir-kataria.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mihir Kataria, Technical Writer. Portfolio hero with the name set in a serif typeface on a dark background.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mihir Kataria · Technical Writer">
+<meta name="twitter:description" content="Mihir Kataria is a technical writer with a computer science degree from Arizona State University, writing API documentation, user manuals, release notes, and setup guides.">
+<meta name="twitter:image" content="https://mihir-kataria.github.io/assets/og-image.png">
+<script>(function(){var d=document.documentElement,t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t==='light'||t==='dark'){d.setAttribute('data-theme',t)}var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',d.getAttribute('data-theme')==='light'?'#f5f2eb':'#0b0d0e');d.classList.add('js');if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('motion');setTimeout(function(){if(!window.__mk)d.classList.remove('motion')},3000)}})();</script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mihir Kataria",
+  "jobTitle": "Technical Writer",
+  "url": "https://mihir-kataria.github.io/",
+  "email": "mailto:mihirkataria1@gmail.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/mihirkataria",
+    "https://github.com/mihir-kataria"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Arizona State University"
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Technical Writing One",
+    "credentialCategory": "Course completion",
+    "recognizedBy": { "@type": "Organization", "name": "Google for Developers" },
+    "dateCreated": "2026"
+  },
+  "award": [
+    "Moeur Award, Arizona State University and the ASU Alumni Association, Fall 2025",
+    "Dean's List, Ira A. Fulton Schools of Engineering, 8 consecutive semesters"
+  ]
+}
+</script>
+</head>
+<body>
+<!-- icons used across the page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3.5 6 8.5 7 8.5-7"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M8 10.5V17M8 7.2v.1M12 17v-6.5M12 13.2c0-1.6 1.1-2.7 2.5-2.7s2.5 1 2.5 2.7V17"/></symbol>
+  <symbol id="i-git" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="9" r="2"/><path d="M6 7v10M18 11c0 4-6 3-12 6"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"/><path d="M14 3v5h5M12 11v6M9.5 14.5 12 17l2.5-2.5"/></symbol>
+  <!-- icons for the sample cards -->
+  <symbol id="d-arch" viewBox="0 0 40 40"><rect x="3" y="15" width="10" height="10"/><rect x="27" y="5" width="10" height="10"/><rect x="27" y="25" width="10" height="10"/><path d="M13 20h6v-10h8M19 20v10h8"/><circle cx="19" cy="20" r="1.2"/></symbol>
+  <symbol id="d-api" viewBox="0 0 40 40"><path d="M14 6c-4 0-5 2-5 5v4c0 3-2 5-5 5 3 0 5 2 5 5v4c0 3 1 5 5 5M26 6c4 0 5 2 5 5v4c0 3 2 5 5 5-3 0-5 2-5 5v4c0 3-1 5-5 5"/><path d="M16 20h8M21 17l3 3-3 3"/></symbol>
+  <symbol id="d-guide" viewBox="0 0 40 40"><path d="M6 8h12a2 2 0 0 1 2 2v24a2 2 0 0 0-2-2H6ZM34 8H22a2 2 0 0 0-2 2v24a2 2 0 0 1 2-2h12Z"/><path d="M10 14h6M10 19h6M24 14h6M24 19h4"/></symbol>
+  <symbol id="d-edit" viewBox="0 0 40 40"><rect x="4" y="6" width="14" height="28"/><rect x="22" y="6" width="14" height="28"/><path d="M8 12h6M8 17h4M8 22h6M8 27h3M26 12h6M26 17h6M26 22h6M26 27h6" /><path d="M18 20h4" stroke-dasharray="1 2"/></symbol>
+  <symbol id="d-style" viewBox="0 0 40 40"><path d="M8 32 15 9h2l7 23M10.5 24h11"/><path d="M27 32V20M27 23.5c0-2 1.5-3.5 3.5-3.5S34 21.5 34 23.5V32M27 28c0 2.2 1.6 4 3.6 4"/><path d="M4 36h32"/></symbol>
+  <symbol id="d-setup" viewBox="0 0 40 40"><rect x="5" y="7" width="30" height="20" rx="1"/><path d="M2 33h36l-3-6H5ZM11 13l4 3-4 3M18 19h6"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- nav bar -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="#top" aria-label="Mihir Kataria, back to top">
+      <span class="brand__mark" aria-hidden="true">MK</span>
+      <span class="brand__name">Mihir Kataria</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#api">API Docs</a>
+      <a href="#samples">Samples</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn--sm" href="assets/Mihir_Kataria_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span class="bars" aria-hidden="true"></span><span class="menu-btn__text">Menu</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+  <ul class="menu__list">
+    <li><a href="#about"><span>01</span>About</a></li>
+    <li><a href="#work"><span>02</span>Work</a></li>
+    <li><a href="#api"><span>03</span>API Docs</a></li>
+    <li><a href="#samples"><span>04</span>Samples</a></li>
+    <li><a href="#writing"><span>05</span>Writing</a></li>
+    <li><a href="#contact"><span>07</span>Contact</a></li>
+  </ul>
+  <div class="menu__foot">
+    <a class="btn btn--ghost" href="assets/Mihir_Kataria_Resume.pdf" target="_blank" rel="noopener">Resume (PDF) <span class="arr" aria-hidden="true">↗</span></a>
+    <span class="mono">Open to roles</span>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- hero: name, intro and stats -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__spot" aria-hidden="true"></div>
+  <div class="hero__ghost" aria-hidden="true"><span class="hero__ghost-inner">README</span></div>
+
+  <div class="container hero__inner">
+    <div class="hero__left">
+      <p class="eyebrow hero__eyebrow" data-hero><span>§ 00</span><span class="dot">·</span><span>Portfolio</span><span class="dot">·</span><span>Technical Writer</span></p>
+      <h1 class="hero__name" id="hero-title" data-hero>
+        <span class="ln"><span>Mihir</span></span>
+        <span class="ln"><em>Kataria.</em></span>
+      </h1>
+      <p class="hero__titlebar" data-hero><span class="mono">Technical Writer / CS Graduate, 4.0 GPA / Arizona State University</span></p>
+      <p class="pill" data-hero><span class="pulse" aria-hidden="true"></span>Open to technical writing roles · Anywhere in the US</p>
+      <div class="hero__ctas" data-hero>
+        <a class="btn btn--primary" href="#samples">Read my samples <span class="arr arr-down" aria-hidden="true">↓</span></a>
+        <a class="btn btn--ghost" href="assets/Mihir_Kataria_Resume.pdf" target="_blank" rel="noopener">Resume (PDF) <span class="arr" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <p class="hero__file" data-hero>README.md</p>
+      <p class="hero__intro" data-hero>I make complex software <strong>easy to follow</strong>. I turn systems into <strong>clear, <span class="nowrap">step-by-step</span> documentation</strong>: the API docs for an AI teaching assistant, setup guides that replaced one-on-one help for 250+ students, and at ProArch, the test process behind a 20% gain in an AI HR assistant's accuracy. My computer science degree means I read the code before I write about it.</p>
+      <dl class="stats" data-hero>
+        <div class="stat"><dt class="sr-only">Fewer setup questions</dt><dd><span class="stat__num" data-count="90" data-suffix="%">90%</span><span class="stat__label mono" aria-hidden="true">Fewer setup questions</span></dd></div>
+        <div class="stat"><dt class="sr-only">Students onboarded</dt><dd><span class="stat__num" data-count="250" data-suffix="+">250+</span><span class="stat__label mono" aria-hidden="true">Students onboarded</span></dd></div>
+        <div class="stat"><dt class="sr-only">AI accuracy gain</dt><dd><span class="stat__num" data-count="20" data-suffix="%">20%</span><span class="stat__label mono" aria-hidden="true">AI accuracy gain</span></dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="ticker" data-hero>
+    <div class="ticker__track">
+      <ul class="ticker__list">
+        <li>API Documentation</li><li>User Manuals</li><li>Release Notes</li><li>Setup Guides</li><li>Architecture Overviews</li><li>Troubleshooting Guides</li><li>Test Procedures</li><li>AI Evaluation</li><li>Style Guides</li><li>Docs-as-Code</li>
+      </ul>
+      <ul class="ticker__list" aria-hidden="true">
+        <li>API Documentation</li><li>User Manuals</li><li>Release Notes</li><li>Setup Guides</li><li>Architecture Overviews</li><li>Troubleshooting Guides</li><li>Test Procedures</li><li>AI Evaluation</li><li>Style Guides</li><li>Docs-as-Code</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 01 about -->
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="container about">
+    <aside class="about__side">
+      <div class="reveal">
+        <p class="mono side-label">Core skills</p>
+        <div class="tags">
+          <span class="tag tag--accent">Technical Writing</span>
+          <span class="tag tag--accent">API Documentation</span>
+          <span class="tag tag--accent">User Manuals</span>
+          <span class="tag tag--accent">Release Notes</span>
+          <span class="tag tag--accent">Docs-as-Code</span>
+          <span class="tag">Setup Guides</span>
+          <span class="tag">Editing &amp; Proofreading</span>
+          <span class="tag">Content Audits</span>
+          <span class="tag">AI Evaluation</span>
+          <span class="tag">SME Collaboration</span>
+          <span class="tag">Audience Analysis</span>
+          <span class="tag">Python</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Git &amp; GitHub</span>
+          <span class="tag">Confluence</span>
+          <span class="tag">Jira</span>
+          <span class="tag">Figma</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="mono side-label">Education</p>
+        <div class="cred">
+          <p class="cred__title">B.S. Computer Science</p>
+          <p class="cred__org mono">Arizona State University</p>
+          <p class="cred__meta mono">GPA 4.00 · Dec 2025</p>
+          <p class="cred__note"><a class="cred__link" href="#honors">Moeur Award · Dean's List, 8 semesters</a></p>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="mono side-label">Training</p>
+        <div class="cred">
+          <p class="cred__title">Technical Writing One</p>
+          <p class="cred__org mono">Google for Developers <span class="nowrap">· 2026</span></p>
+        </div>
+      </div>
+    </aside>
+
+    <div class="about__main">
+      <p class="eyebrow"><span class="sec">§ 01</span><span class="dot">·</span><span>About</span></p>
+      <h2 class="h-sec" id="about-title"><span class="ln"><span>Clear docs start</span></span><span class="ln"><em>inside the code.</em></span></h2>
+      <p class="prose-p reveal">I'm a technical writer with a <strong>Computer Science degree from Arizona State University</strong>. I don't just document what engineers build. I've built alongside them, so I know which details a reader needs and which ones get in the way.</p>
+      <blockquote class="quote reveal"><p>If a reader has to ask, the doc skipped a step.</p></blockquote>
+      <p class="prose-p reveal">At ASU, I led documentation for AIAG, an AI teaching assistant piloted in 2 computer science courses, working under <strong>Prof. Yinong Chen</strong>. I wrote its API documentation, deployment guide, instructor user manual, and release notes for two very different readers: developers and instructors.</p>
+      <p class="prose-p reveal">As a teaching assistant, my <strong>setup guides replaced one-on-one help for 250+ students</strong> and cut setup questions by 90%. As a Section Leader, I wrote and delivered 6 lectures to 70 first-year students. And at ProArch, I documented a 4-phase test process for an AI HR assistant that helped raise its accuracy by 20%.</p>
+
+      <div class="honors" id="honors">
+        <h3 class="mono side-label" id="honors-title">Honors</h3>
+        <ul class="honors__list" aria-labelledby="honors-title" data-stagger>
+          <li class="honor reveal">
+            <a class="honor__thumb" href="assets/awards/moeur-award.jpg" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"
+               data-lightbox="moeur" data-caption="Moeur Award · Fall 2025 · Arizona State University and the ASU Alumni Association"
+               data-alt="Moeur Award certificate, Fall 2025, presented to Mihir Kataria, Ira A. Fulton Schools of Engineering, for exceptional academic achievement">
+              <img src="assets/awards/thumb-moeur-award.jpg" width="336" height="257" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="honor__body">
+              <p class="honor__meta mono">Arizona State University · Fall 2025</p>
+              <h4 class="honor__title">Moeur Award</h4>
+              <p class="honor__desc">Recognized by ASU and the ASU Alumni Association for exceptional academic achievement: a 4.00 GPA.</p>
+              <a class="link-mono" href="assets/awards/moeur-award.jpg" target="_blank" rel="noopener"
+                 data-lightbox="moeur" data-caption="Moeur Award · Fall 2025 · Arizona State University and the ASU Alumni Association"
+                 data-alt="Moeur Award certificate, Fall 2025, presented to Mihir Kataria, Ira A. Fulton Schools of Engineering, for exceptional academic achievement">View certificate <span class="arr" aria-hidden="true">↗</span></a>
+            </div>
+          </li>
+          <li class="honor reveal">
+            <a class="honor__thumb honor__thumb--stack" href="assets/awards/deans-list-spring-2025.jpg" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"
+               data-lightbox="deans-list" data-caption="Dean's List · Spring 2025 · Ira A. Fulton Schools of Engineering"
+               data-alt="Dean's List certificate of merit, Spring 2025, Ira A. Fulton Schools of Engineering, awarded to Mihir Kataria">
+              <img src="assets/awards/thumb-deans-list.jpg" width="336" height="260" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="honor__body">
+              <p class="honor__meta mono">Ira A. Fulton Schools of Engineering</p>
+              <h4 class="honor__title">Dean's List, <em>8 consecutive semesters</em></h4>
+              <p class="honor__desc">A certificate of merit from the engineering faculty for outstanding academic achievement.</p>
+              <ul class="honor__chips" aria-label="Dean's List certificates">
+                <li><a class="chip" href="assets/awards/deans-list-spring-2022.jpg" target="_blank" rel="noopener" data-lightbox="deans-list" data-caption="Dean's List · Spring 2022 · Ira A. Fulton Schools of Engineering" data-alt="Dean's List certificate of merit, Spring 2022, Ira A. Fulton Schools of Engineering, awarded to Mihir Kataria">Spring 2022</a></li>
+                <li><a class="chip" href="assets/awards/deans-list-fall-2022.jpg" target="_blank" rel="noopener" data-lightbox="deans-list" data-caption="Dean's List · Fall 2022 · Ira A. Fulton Schools of Engineering" data-alt="Dean's List certificate of merit, Fall 2022, Ira A. Fulton Schools of Engineering, awarded to Mihir Kataria">Fall 2022</a></li>
+                <li><a class="chip" href="assets/awards/deans-list-spring-2023.jpg" target="_blank" rel="noopener" data-lightbox="deans-list" data-caption="Dean's List · Spring 2023 · Ira A. Fulton Schools of Engineering" data-alt="Dean's List certificate of merit, Spring 2023, Ira A. Fulton Schools of Engineering, awarded to Mihir Kataria">Spring 2023</a></li>
+                <li><a class="chip" href="assets/awards/deans-list-fall-2023.jpg" target="_blank" rel="noopener" data-lightbox="deans-list" data-caption="Dean's List · Fall 2023 · Ira A. Fulton Schools of Engineering" data-alt="Dean's List certificate of merit, Fall 2023, Ira A. Fulton Schools of Engineering, awarded to Mihir Kataria">Fall 2023</a></li>
+                <li><a class="chip" href="assets/awards/deans-list-spring-2024.jpg" target="_blank" rel="noopener" data-lightbox="deans-list" data-caption="Dean's List · Spring 2024 · Ira A. Fulton Schools of Engineering" data-alt="Dean's List certificate of merit, Spring 2024, Ira A. Fulton Schools of Engineering, awarded to Mihir Kataria">Spring 2024</a></li>
+                <li><a class="chip" href="assets/awards/deans-list-fall-2024.jpg" target="_blank" rel="noopener" data-lightbox="deans-list" data-caption="Dean's List · Fall 2024 · Ira A. Fulton Schools of Engineering" data-alt="Dean's List certificate of merit, Fall 2024, Ira A. Fulton Schools of Engineering, awarded to Mihir Kataria">Fall 2024</a></li>
+                <li><a class="chip" href="assets/awards/deans-list-spring-2025.jpg" target="_blank" rel="noopener" data-lightbox="deans-list" data-caption="Dean's List · Spring 2025 · Ira A. Fulton Schools of Engineering" data-alt="Dean's List certificate of merit, Spring 2025, Ira A. Fulton Schools of Engineering, awarded to Mihir Kataria">Spring 2025</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 work -->
+<section class="section" id="work" aria-labelledby="work-title">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><span class="sec">§ 02</span><span class="dot">·</span><span>Case Studies</span></p>
+        <h2 class="h-sec" id="work-title"><span class="ln"><span>Selected</span></span><span class="ln"><em>Work.</em></span></h2>
+      </div>
+      <span class="sec-head__count" aria-hidden="true">03</span>
+    </div>
+
+    <div class="cases">
+      <article class="case reveal" aria-labelledby="case-1">
+        <div class="case__meta">
+          <p class="case__num mono">01 / 03</p>
+          <p class="case__org">Arizona State University · AIAG</p>
+          <p class="case__role">Software Developer &amp; Technical Writer</p>
+          <p class="case__dates mono">Aug 2024 - May 2025</p>
+          <div class="tags"><span class="tag">AI / RAG</span><span class="tag">API Docs</span><span class="tag">User Manual</span><span class="tag">Release Notes</span></div>
+        </div>
+        <div class="case__body">
+          <h3 class="case__title" id="case-1">Documenting an AI Teaching Assistant for Developers and Instructors</h3>
+          <p class="prose-p">AIAG (ASU Instructor Assistant GPT) answers student questions with <strong>retrieval-augmented generation</strong>: it matches each question to course materials, sends the best matches to the OpenAI API, and shows students the sources behind every answer. It was piloted in 2 ASU computer science courses, and I led its documentation while working directly with Prof. Yinong Chen across two semesters.</p>
+          <p class="prose-p">Two audiences needed two kinds of docs. Developers needed to know how the <strong>Flask backend</strong> worked. Instructors needed to manage course content without reading any code. I wrote for both, and reviewed every release with Prof. Chen.</p>
+          <dl class="metrics">
+            <div class="metric"><dt class="sr-only">Courses piloted</dt><dd><span class="metric__num">2</span><span class="metric__label mono" aria-hidden="true">Courses piloted</span></dd></div>
+            <div class="metric"><dt class="sr-only">Doc types written</dt><dd><span class="metric__num">5</span><span class="metric__label mono" aria-hidden="true">Doc types written</span></dd></div>
+            <div class="metric"><dt class="sr-only">Reader audiences</dt><dd><span class="metric__num">2</span><span class="metric__label mono" aria-hidden="true">Reader audiences</span></dd></div>
+          </dl>
+          <p class="sub-label mono">Approach &amp; deliverables</p>
+          <ul class="arrow-list">
+            <li>API documentation for the Flask backend: setup, dependencies, endpoints, request and response formats, and logging</li>
+            <li>A deployment guide and test reports for the engineering team</li>
+            <li>A user manual for the instructor admin panel I helped build, written, edited, and proofread for accuracy, clarity, and usability</li>
+            <li>Technical release notes for developers and plain-language release notes for instructors</li>
+            <li>AI answers validated with faculty SMEs, using DeepEval and Ragas scores (faithfulness, context precision, response relevancy) to guide prompt and knowledge base fixes</li>
+            <li>Co-presented a poster on AIAG's design and evaluation at ASU's Spring 2025 project showcase</li>
+          </ul>
+          <div class="case__links">
+            <a class="link-mono" href="samples/architecture-overview.html">Architecture overview <span class="arr" aria-hidden="true">↗</span></a>
+            <a class="link-mono" href="samples/api-reference-sample.html">API reference <span class="arr" aria-hidden="true">↗</span></a>
+            <a class="link-mono" href="samples/student-quick-start.html">Student quick start <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="case reveal" aria-labelledby="case-2">
+        <div class="case__meta">
+          <p class="case__num mono">02 / 03</p>
+          <p class="case__org">ProArch · IT consulting</p>
+          <p class="case__role">AI Engineering Intern · Remote</p>
+          <p class="case__dates mono">May 2024 - Aug 2024</p>
+          <div class="tags"><span class="tag">AI Evaluation</span><span class="tag">Test Documentation</span><span class="tag">Content Audit</span><span class="tag">QA</span></div>
+        </div>
+        <div class="case__body">
+          <h3 class="case__title" id="case-2">Testing and Documenting an AI HR Assistant</h3>
+          <p class="prose-p">ProArch was building an HR assistant chatbot in <strong>Microsoft Copilot Studio</strong>. My job was to find where its answers went wrong, document why, and make the testing repeatable.</p>
+          <p class="prose-p">I designed and documented a <strong>4-phase testing procedure</strong> with a consistent format for recording expected vs. actual responses and citation accuracy, then audited the chatbot's knowledge base with HR stakeholders over 3 review cycles. Content and prompt fixes based on the audit improved response accuracy by 20%.</p>
+          <dl class="metrics">
+            <div class="metric"><dt class="sr-only">Test cases</dt><dd><span class="metric__num">50+</span><span class="metric__label mono" aria-hidden="true">Test cases</span></dd></div>
+            <div class="metric"><dt class="sr-only">Accuracy improvement</dt><dd><span class="metric__num">20%</span><span class="metric__label mono" aria-hidden="true">Accuracy improvement</span></dd></div>
+            <div class="metric"><dt class="sr-only">HR policy domains</dt><dd><span class="metric__num">24+</span><span class="metric__label mono" aria-hidden="true">HR policy domains</span></dd></div>
+          </dl>
+          <p class="sub-label mono">Approach &amp; deliverables</p>
+          <ul class="arrow-list">
+            <li>Four test phases: baseline testing, prompt rephrasing, in-context learning refinement, and multi-category prompt analysis</li>
+            <li>An automated test pipeline in Python and Selenium that ran batch prompts from Excel</li>
+            <li>Answer quality measured with Ragas (faithfulness, context precision, response relevancy)</li>
+            <li>Citation errors and wrong policy references flagged, with knowledge base updates recommended to HR</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="case reveal" aria-labelledby="case-3">
+        <div class="case__meta">
+          <p class="case__num mono">03 / 03</p>
+          <p class="case__org">Arizona State University · CSE 360 &amp; CSE 301</p>
+          <p class="case__role">Undergraduate Teaching Assistant</p>
+          <p class="case__dates mono">Jun 2024 - Dec 2024</p>
+          <div class="tags"><span class="tag">Setup Guides</span><span class="tag">Troubleshooting</span><span class="tag">FAQ</span><span class="tag">UML</span></div>
+        </div>
+        <div class="case__body">
+          <h3 class="case__title" id="case-3">Turning a Tricky Install into a Guide 250+ Students Could Follow</h3>
+          <p class="prose-p">Before students in Introduction to Software Engineering could write a line of code, they had to install and configure <strong>JavaFX and IntelliJ IDEA</strong> on their own Mac or Windows laptops, and one-on-one help in office hours couldn't keep up. I wrote a self-serve guide for each platform, with screenshots and a troubleshooting section.</p>
+          <p class="prose-p">The guides replaced one-on-one setup help for <strong>250+ students</strong>, and setup questions dropped by 90%. Then I kept improving the course docs: recurring office-hour issues became guide updates and a course FAQ, and I edited project instructions and rubrics so every team knew what each deliverable required.</p>
+          <dl class="metrics">
+            <div class="metric"><dt class="sr-only">Students onboarded</dt><dd><span class="metric__num">250+</span><span class="metric__label mono" aria-hidden="true">Students onboarded</span></dd></div>
+            <div class="metric"><dt class="sr-only">Fewer setup questions</dt><dd><span class="metric__num">90%</span><span class="metric__label mono" aria-hidden="true">Fewer setup questions</span></dd></div>
+            <div class="metric"><dt class="sr-only">Platforms covered</dt><dd><span class="metric__num">2</span><span class="metric__label mono" aria-hidden="true">Platforms covered</span></dd></div>
+          </dl>
+          <p class="sub-label mono">Approach &amp; deliverables</p>
+          <ul class="arrow-list">
+            <li>Setup guides for macOS (7 pages) and Windows (8 pages) with screenshots</li>
+            <li>A troubleshooting section updated from recurring office-hour issues, plus a course FAQ for all students</li>
+            <li>Written feedback on student requirements specs, UML design documents, and ethics case analyses</li>
+            <li>Project instructions and rubrics edited for clarity</li>
+            <li>Case-study assignments on privacy and AI ethics for Computing Ethics, plus curriculum reviews with faculty</li>
+            <li>Lecture slides and UML diagrams for software design topics</li>
+          </ul>
+          <div class="case__links">
+            <a class="link-mono" href="samples/intellij-javafx-setup.html">Setup guide <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 03 api docs -->
+<section class="section band" id="api" aria-labelledby="api-title">
+  <div class="container api">
+    <div class="api__copy">
+      <p class="eyebrow"><span class="sec">§ 03</span><span class="dot">·</span><span>API Documentation</span></p>
+      <h2 class="h-sec" id="api-title"><span class="ln"><span>Docs for</span></span><span class="ln"><em>Developers.</em></span></h2>
+      <p class="prose-p reveal">API docs are where precision matters most. I've written backend documentation that kept <strong>frontend and backend teams aligned</strong>, and because I've written Python, Java, and JavaScript myself, I can read the code behind the endpoints I document.</p>
+      <ul class="arrow-list arrow-list--ruled reveal">
+        <li>Endpoint references with parameter tables, request and response examples, and error tables, written from first-hand knowledge of the code.</li>
+        <li>Setup, dependency, and deployment steps a new developer can follow on day one.</li>
+        <li>Release notes written twice: technical for developers, plain language for instructors.</li>
+        <li>Logging and troubleshooting notes that point to the likely cause, not just the symptom.</li>
+        <li>Architecture overviews with sequence and flow diagrams written as Mermaid code.</li>
+      </ul>
+    </div>
+
+    <div class="api__cards">
+      <div class="code-card reveal">
+        <div class="code-card__head">
+          <span class="badge badge--post">POST</span>
+          <span class="code-card__title"><span class="code-card__path">/api/similar_questions</span><span class="code-card__desc">Ask a question and get a sourced answer</span></span>
+          <button class="copy-btn" type="button" data-copy aria-label="Copy request JSON"><svg class="icon" width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button>
+        </div>
+        <span class="code-label">Request · application/json</span>
+<pre class="code" tabindex="0" data-copy-target aria-label="Request JSON"><code><span class="p">{</span>
+  <span class="k">"question"</span><span class="p">:</span> <span class="s">"Can I use VS Code for the web services assignment?"</span><span class="p">,</span>
+  <span class="k">"history"</span><span class="p">:</span> <span class="p">[</span><span class="p">]</span><span class="p">,</span>
+  <span class="k">"language"</span><span class="p">:</span> <span class="s">"en"</span><span class="p">,</span>
+  <span class="k">"class"</span><span class="p">:</span> <span class="s">"DEMO 101"</span><span class="p">,</span>
+  <span class="k">"activeContainer"</span><span class="p">:</span> <span class="s">"asugpt"</span>
+<span class="p">}</span></code></pre>
+        <div class="code-sep"></div>
+        <span class="code-label">Response · 200 OK</span>
+<pre class="code" tabindex="0" aria-label="Response JSON"><code><span class="p">{</span>
+  <span class="k">"gpt_result"</span><span class="p">:</span> <span class="s">"Yes. Any editor works, as long as your services build and run in the required framework."</span><span class="p">,</span>
+  <span class="k">"engine_results"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="k">"message"</span><span class="p">:</span> <span class="s">"Is VS Code OK instead of Visual Studio?"</span><span class="p">,</span> <span class="k">"updated_at"</span><span class="p">:</span> <span class="s">"2024-02-03T18:22:10Z"</span><span class="p">,</span>
+      <span class="k">"replies"</span><span class="p">:</span> <span class="p">[</span> <span class="p">{</span> <span class="k">"message"</span><span class="p">:</span> <span class="s">"Yes, any editor is fine."</span><span class="p">,</span> <span class="k">"updated_at"</span><span class="p">:</span> <span class="s">"2024-02-03T20:05:44Z"</span><span class="p">,</span> <span class="k">"replies"</span><span class="p">:</span> <span class="p">[</span><span class="p">]</span> <span class="p">}</span> <span class="p">]</span> <span class="p">}</span>
+  <span class="p">]</span><span class="p">,</span>
+  <span class="k">"human_required"</span><span class="p">:</span> <span class="n">false</span>
+<span class="p">}</span></code></pre>
+      </div>
+
+      <div class="code-card reveal">
+        <div class="code-card__head">
+          <span class="badge badge--post">POST</span>
+          <span class="code-card__title"><span class="code-card__path">/api/create_discussion</span><span class="code-card__desc">Post an unanswered question to the discussion board</span></span>
+          <button class="copy-btn" type="button" data-copy aria-label="Copy response JSON"><svg class="icon" width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button>
+        </div>
+        <span class="code-label">Request · multipart/form-data</span>
+<pre class="code" tabindex="0" aria-label="Request form fields"><code><span class="k">course_id</span> <span class="p">=</span> <span class="s">&lt;COURSE_ID&gt;</span>
+<span class="k">question</span>  <span class="p">=</span> <span class="s">Deploying assignment 2 to the course server</span>
+<span class="k">body</span>      <span class="p">=</span> <span class="s">My deployment fails after I upload the build. What should I check first?</span></code></pre>
+        <div class="code-sep"></div>
+        <span class="code-label">Response · 201 Created</span>
+<pre class="code" tabindex="0" data-copy-target aria-label="Response JSON"><code><span class="p">{</span>
+  <span class="k">"message"</span><span class="p">:</span> <span class="s">"Discussion with image created successfully"</span><span class="p">,</span>
+  <span class="k">"discussion_id"</span><span class="p">:</span> <span class="n">9001</span><span class="p">,</span>
+  <span class="k">"title"</span><span class="p">:</span> <span class="s">"Deploying assignment 2 to the course server"</span><span class="p">,</span>
+  <span class="k">"body"</span><span class="p">:</span> <span class="s">"My deployment fails after I upload the build. What should I check first?"</span><span class="p">,</span>
+  <span class="k">"posted_at"</span><span class="p">:</span> <span class="s">"2025-03-18T21:04:55Z"</span><span class="p">,</span>
+  <span class="k">"html_url"</span><span class="p">:</span> <span class="s">"&lt;DISCUSSION_URL&gt;"</span>
+<span class="p">}</span></code></pre>
+      </div>
+
+      <div class="code-card reveal">
+        <div class="code-card__head">
+          <span class="badge badge--neutral">REF</span>
+          <span class="code-card__title"><span class="code-card__path">Status codes</span><span class="code-card__desc">What each response means and what to check</span></span>
+        </div>
+        <table class="status-table">
+          <thead><tr><th scope="col">Code</th><th scope="col">Meaning</th></tr></thead>
+          <tbody>
+            <tr><td class="ok">200 OK</td><td>Answer returned, with sources when passages matched</td></tr>
+            <tr><td class="ok">201 Created</td><td>Discussion post or chat created</td></tr>
+            <tr><td>400 Bad Request</td><td>Invalid <code>activeContainer</code>, or the discussion board rejected the post</td></tr>
+            <tr><td>401 Unauthorized</td><td>No user is signed in</td></tr>
+            <tr><td>500 Server Error</td><td>A required field is missing</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="api__caption">Adapted from my AIAG backend documentation.</p>
+      <p class="api__more"><a class="link-mono" href="samples/api-reference-sample.html">Read the full API sample <span class="arr" aria-hidden="true">↗</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- 04 samples -->
+<section class="section" id="samples" aria-labelledby="samples-title">
+  <div class="container">
+    <div class="samples-head">
+      <div>
+        <p class="eyebrow"><span class="sec">§ 04</span><span class="dot">·</span><span>Samples</span></p>
+        <h2 class="h-sec" id="samples-title"><span class="ln"><span>Written for</span></span><span class="ln"><em>Real Readers.</em></span></h2>
+      </div>
+      <p class="lede reveal">Real documents for developers, instructors, and students. Each one opens in full.</p>
+    </div>
+
+    <div class="cards" data-stagger>
+      <article class="card reveal">
+        <div class="card__top"><svg class="icon card__icon" aria-hidden="true"><use href="#d-arch"/></svg><span class="card__num mono">Doc 01</span></div>
+        <p class="card__type mono">Architecture overview</p>
+        <h3 class="card__title">How AIAG Answers a Question</h3>
+        <p class="card__desc">A system overview of an AI teaching assistant: its components, and the path a student's question takes from the chat to a sourced answer, with diagrams.</p>
+        <div class="tags"><span class="tag">Developers</span><span class="tag">RAG</span><span class="tag">Diagrams</span></div>
+        <p class="card__action"><a class="link-mono" href="samples/architecture-overview.html">Read sample <span class="arr" aria-hidden="true">↗</span><span class="sr-only">: How AIAG Answers a Question</span></a></p>
+      </article>
+      <article class="card reveal">
+        <div class="card__top"><svg class="icon card__icon" aria-hidden="true"><use href="#d-api"/></svg><span class="card__num mono">Doc 02</span></div>
+        <p class="card__type mono">API reference</p>
+        <h3 class="card__title">AIAG Backend API: Selected Endpoints</h3>
+        <p class="card__desc">Reference pages for the endpoints that answer questions and escalate them to the discussion board, with parameters, examples, and errors.</p>
+        <div class="tags"><span class="tag">Developers</span><span class="tag">REST</span><span class="tag">Flask</span></div>
+        <p class="card__action"><a class="link-mono" href="samples/api-reference-sample.html">Read sample <span class="arr" aria-hidden="true">↗</span><span class="sr-only">: AIAG Backend API</span></a></p>
+      </article>
+      <article class="card reveal">
+        <div class="card__top"><svg class="icon card__icon" aria-hidden="true"><use href="#d-guide"/></svg><span class="card__num mono">Doc 03</span></div>
+        <p class="card__type mono">User guide</p>
+        <h3 class="card__title">AIAG Quick Start for Students</h3>
+        <p class="card__desc">A one-page, plain-language guide to asking questions, reading sources, switching language, and getting help from course staff.</p>
+        <div class="tags"><span class="tag">Students</span><span class="tag">Plain language</span></div>
+        <p class="card__action"><a class="link-mono" href="samples/student-quick-start.html">Read sample <span class="arr" aria-hidden="true">↗</span><span class="sr-only">: AIAG Quick Start for Students</span></a></p>
+      </article>
+      <article class="card reveal">
+        <div class="card__top"><svg class="icon card__icon" aria-hidden="true"><use href="#d-edit"/></svg><span class="card__num mono">Doc 04</span></div>
+        <p class="card__type mono">Editing sample</p>
+        <h3 class="card__title">Before and After: API Documentation</h3>
+        <p class="card__desc">An informal internal API note, rewritten to professional standards, with the reasoning behind each change.</p>
+        <div class="tags"><span class="tag">Editing</span><span class="tag">Style guides</span></div>
+        <p class="card__action"><a class="link-mono" href="samples/before-and-after-api-docs.html">Read sample <span class="arr" aria-hidden="true">↗</span><span class="sr-only">: Before and After</span></a></p>
+      </article>
+      <article class="card reveal">
+        <div class="card__top"><svg class="icon card__icon" aria-hidden="true"><use href="#d-style"/></svg><span class="card__num mono">Doc 05</span></div>
+        <p class="card__type mono">Style guide</p>
+        <h3 class="card__title">AIAG Terminology Guide</h3>
+        <p class="card__desc">The single-term rules and acronym list I set so every page used the same words.</p>
+        <div class="tags"><span class="tag">Consistency</span><span class="tag">Style</span></div>
+        <p class="card__action"><a class="link-mono" href="samples/terminology-sample.html">Read sample <span class="arr" aria-hidden="true">↗</span><span class="sr-only">: AIAG Terminology Guide</span></a></p>
+      </article>
+      <article class="card reveal">
+        <div class="card__top"><svg class="icon card__icon" aria-hidden="true"><use href="#d-setup"/></svg><span class="card__num mono">Doc 06</span></div>
+        <p class="card__type mono">Setup guide</p>
+        <h3 class="card__title">Installing IntelliJ IDEA and JavaFX</h3>
+        <p class="card__desc">Step-by-step install guides for macOS and Windows, with screenshots and a troubleshooting section, that replaced one-on-one help for 250+ students.</p>
+        <div class="tags"><span class="tag">CSE 360</span><span class="tag">Screenshots</span></div>
+        <p class="card__action"><a class="link-mono" href="samples/intellij-javafx-setup.html">Read sample <span class="arr" aria-hidden="true">↗</span><span class="sr-only">: Installing IntelliJ IDEA and JavaFX</span></a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 05 writing -->
+<section class="section band" id="writing" aria-labelledby="writing-title">
+  <div class="container">
+    <header class="masthead">
+      <div class="masthead__rule" aria-hidden="true"></div>
+      <p class="eyebrow"><span class="sec">§ 05</span><span class="dot">·</span><span>Writing</span></p>
+      <h2 class="masthead__title" id="writing-title"><span class="ln"><span>Plain Text.</span></span></h2>
+      <p class="masthead__sub mono">Essays on documentation, AI, and clear writing · by <b>Mihir Kataria</b></p>
+    </header>
+
+    <div class="articles">
+      <article class="feature reveal" aria-labelledby="post-1">
+        <p class="feature__cat mono">AI &amp; Documentation</p>
+        <h3 class="feature__title" id="post-1">Writing for Two Readers: <em>People and the Retriever</em></h3>
+        <p class="prose-p">In a retrieval-augmented generation (RAG) system, your documentation becomes the AI's source of truth: the retriever pulls chunks of it, and the model answers from them. When I evaluated AIAG's answers with DeepEval and Ragas, <strong>low faithfulness and context precision scores often traced back to the content</strong>, not the model: vague headings, answers buried mid-page, and one concept called three different names.</p>
+        <p class="prose-p">The fix isn't writing for machines instead of people. <strong>Descriptive headings, self-contained sections, and one term per concept</strong> make docs easier to retrieve and easier to read. This piece shows how, and why technical writers now shape an AI product's accuracy, not just its manual.</p>
+        <div class="byline">
+          <span class="mono">By Mihir Kataria · 8 min read</span>
+          <a class="link-mono" href="samples/architecture-overview.html">Related sample: How AIAG Answers a Question <span class="arr" aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <div class="posts" data-stagger>
+        <article class="post reveal" aria-labelledby="post-2">
+          <span class="post__num" aria-hidden="true">02</span>
+          <p class="post__cat mono">Docs-as-Code &amp; AI</p>
+          <h3 class="post__title" id="post-2">Docs-as-Code in the Age of AI: Draft Fast, Verify Everything</h3>
+          <p class="post__excerpt">I rebuilt AIAG's documentation the way engineers ship software: Markdown in Git, diagrams written as Mermaid code, and every change reviewed as a diff before it went live on GitHub Pages. An AI assistant drafted faster than I ever could, but every claim still had to be checked against the codebase, and that verification step is where a technical writer earns their place.</p>
+          <p class="post__meta mono"><span>7 min read</span></p>
+        </article>
+        <article class="post reveal" aria-labelledby="post-3">
+          <span class="post__num" aria-hidden="true">03</span>
+          <p class="post__cat mono">Audience &amp; Clarity</p>
+          <h3 class="post__title" id="post-3">Seventy Freshmen, Six Lectures: What Teaching Taught Me About Writing for Beginners</h3>
+          <p class="post__excerpt">In front of 70 first-year students, I learned that a confused audience rarely asks questions. It just stops following. The habits that fixed my lectures (lead with the goal, one idea per step, define each term the first time it appears, and show what success looks like) are the same ones that make documentation work for a first-time user.</p>
+          <p class="post__meta mono"><span>6 min read</span><a class="link-mono" href="samples/student-quick-start.html">Related sample: AIAG Quick Start <span class="arr" aria-hidden="true">↗</span></a></p>
+        </article>
+        <article class="post reveal" aria-labelledby="post-4">
+          <span class="post__num" aria-hidden="true">04</span>
+          <p class="post__cat mono">Editing &amp; Style</p>
+          <h3 class="post__title" id="post-4">Before and After: Turning Dev Notes into Docs a New Hire Can Use</h3>
+          <p class="post__excerpt">Internal notes are usually written once, by the person who needed them least. I rewrote AIAG's informal backend notes using the Google developer documentation style guide and the Diataxis framework: reference separated from how-to, parameter and error tables, complete request and response examples, and one approved term for every concept. The facts barely changed. How quickly a new developer could use them did.</p>
+          <p class="post__meta mono"><span>5 min read</span><a class="link-mono" href="samples/before-and-after-api-docs.html">See the rewrite <span class="arr" aria-hidden="true">↗</span></a></p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 skills -->
+<section class="section" id="skills" aria-labelledby="skills-title">
+  <div class="container">
+    <div class="skills-head">
+      <p class="eyebrow"><span class="sec">§ 06</span><span class="dot">·</span><span>Skills &amp; Tools</span></p>
+      <h2 class="h-sec" id="skills-title"><span class="ln"><span>The</span></span><span class="ln"><em>Toolkit.</em></span></h2>
+    </div>
+    <div class="skills" data-stagger>
+      <div class="skill-group reveal">
+        <h3 class="skill-group__title mono">Writing &amp; Docs</h3>
+        <ul class="skill-list">
+          <li>Technical Writing</li><li>API Documentation</li><li>User Manuals &amp; Guides</li><li>Release Notes</li><li>Setup Guides &amp; FAQs</li><li>Process &amp; Test Documentation</li><li>Editing &amp; Proofreading</li><li>Content &amp; Knowledge Base Audits</li><li>Style Guides &amp; Terminology</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="skill-group__title mono">Languages &amp; Markup</h3>
+        <ul class="skill-list">
+          <li>Python</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>C/C++</li><li>HTML</li><li>CSS</li><li>Markdown</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="skill-group__title mono">Frameworks &amp; AI</h3>
+        <ul class="skill-list">
+          <li>React</li><li>Flask</li><li>REST APIs</li><li>OpenAI API</li><li>Microsoft Copilot Studio</li><li>DeepEval</li><li>Ragas</li><li>Selenium</li><li>Prompt Engineering</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="skill-group__title mono">Tools</h3>
+        <ul class="skill-list">
+          <li>Git &amp; GitHub</li><li>GitHub Pages</li><li>Mermaid</li><li>Claude Code</li><li>Confluence</li><li>Jira</li><li>Notion</li><li>Figma</li><li>Adobe InDesign</li><li>Microsoft Office</li><li>Google Workspace</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 contact -->
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="container contact">
+    <div>
+      <p class="eyebrow"><span class="sec">§ 07</span><span class="dot">·</span><span>Contact</span></p>
+      <h2 class="h-sec" id="contact-title"><span class="ln"><span>Let's make it</span></span><span class="ln"><em>easy to follow.</em></span></h2>
+      <p class="prose-p reveal">Whether it's API docs developers can trust, a guide a first-time user can actually follow, or release notes people read, I'd love to help. I'm open to roles <strong>anywhere in the US</strong>: onsite, hybrid, or remote.</p>
+    </div>
+    <div class="contact-rows" data-stagger>
+      <a class="contact-row reveal" href="mailto:mihirkataria1@gmail.com">
+        <span class="contact-row__icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+        <span><span class="contact-row__label mono">Email</span><span class="contact-row__value">mihirkataria1@gmail.com</span></span>
+        <span class="contact-row__arr" aria-hidden="true">↗</span>
+      </a>
+      <a class="contact-row reveal" href="https://www.linkedin.com/in/mihirkataria" target="_blank" rel="noopener">
+        <span class="contact-row__icon"><svg class="icon" aria-hidden="true"><use href="#i-in"/></svg></span>
+        <span><span class="contact-row__label mono">LinkedIn</span><span class="contact-row__value">linkedin.com/in/mihirkataria</span></span>
+        <span class="contact-row__arr" aria-hidden="true">↗</span>
+      </a>
+      <a class="contact-row reveal" href="https://github.com/mihir-kataria" target="_blank" rel="noopener">
+        <span class="contact-row__icon"><svg class="icon" aria-hidden="true"><use href="#i-git"/></svg></span>
+        <span><span class="contact-row__label mono">GitHub</span><span class="contact-row__value">github.com/mihir-kataria</span></span>
+        <span class="contact-row__arr" aria-hidden="true">↗</span>
+      </a>
+      <a class="contact-row reveal" href="assets/Mihir_Kataria_Resume.pdf" target="_blank" rel="noopener">
+        <span class="contact-row__icon"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span>
+        <span><span class="contact-row__label mono">Resume</span><span class="contact-row__value">Download PDF</span></span>
+        <span class="contact-row__arr" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="mono">© 2026 Mihir Kataria · Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+    <a class="mono" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+<!-- popup for viewing certificates -->
+<dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption">
+  <div class="lightbox__frame">
+    <figure class="lightbox__fig">
+      <img class="lightbox__img" alt="" decoding="async">
+      <figcaption class="lightbox__cap">
+        <span class="lightbox__count mono" aria-hidden="true"></span>
+        <span class="lightbox__text" id="lightbox-caption">Certificate</span>
+      </figcaption>
+    </figure>
+    <div class="lightbox__bar">
+      <button class="lightbox__btn lightbox__prev" type="button" aria-label="Previous certificate"><span aria-hidden="true">←</span></button>
+      <button class="lightbox__btn lightbox__next" type="button" aria-label="Next certificate"><span aria-hidden="true">→</span></button>
+      <a class="lightbox__btn lightbox__open" href="#" target="_blank" rel="noopener">Full size <span aria-hidden="true">↗</span></a>
+      <button class="lightbox__btn lightbox__close" type="button" aria-label="Close certificate viewer" autofocus>Close <span aria-hidden="true">×</span></button>
+    </div>
+  </div>
+</dialog>
+<div class="sr-only" aria-live="polite" id="live"></div>
+</body>
+</html>
