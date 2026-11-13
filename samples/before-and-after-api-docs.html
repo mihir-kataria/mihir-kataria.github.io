@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Before and After: API Documentation · Mihir Kataria</title>
+<meta name="description" content="An informal internal API note, rewritten to professional standards, with the reasoning behind each change.">
+<meta name="theme-color" content="#0b0d0e">
+<link rel="canonical" href="https://mihir-kataria.github.io/samples/before-and-after-api-docs.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Before and After: API Documentation · Mihir Kataria">
+<meta property="og:description" content="An informal internal API note, rewritten to professional standards, with the reasoning behind each change.">
+<meta property="og:url" content="https://mihir-kataria.github.io/samples/before-and-after-api-docs.html">
+<meta property="og:image" content="https://mihir-kataria.github.io/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement,t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t==='light'||t==='dark'){d.setAttribute('data-theme',t)}var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',d.getAttribute('data-theme')==='light'?'#f5f2eb':'#0b0d0e');d.classList.add('js');if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('motion');setTimeout(function(){if(!window.__mk)d.classList.remove('motion')},3000)}})();</script>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js" defer></script>
+<script src="../js/main.js" defer></script>
+<script src="../js/doc.js" defer></script>
+</head>
+<body class="doc-page">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+</svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="../index.html" aria-label="Mihir Kataria, home">
+      <span class="brand__mark" aria-hidden="true">MK</span>
+      <span class="brand__name">Mihir Kataria</span>
+    </a>
+    <a class="link-mono nav__back" href="/#samples"><span aria-hidden="true">←</span> Back to samples</a>
+    <div class="nav__actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn--sm" href="../assets/Mihir_Kataria_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <header class="doc-hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow"><span class="sec">Doc 04</span><span class="dot">·</span><span>Editing sample</span></p>
+      <h1 class="doc-title">Before and After: <em>API Documentation</em></h1>
+      <div class="doc-meta">
+        <div class="tags"><span class="tag">Editing</span><span class="tag">Style guides</span></div>
+        <span class="mono">3 min read</span>
+      </div>
+      <p class="doc-note"><span class="mono">Note</span><span>The "Before" text is from AIAG's original internal notes. The "After" version and the analysis are my rewrite.</span></p>
+    </div>
+  </header>
+
+  <div class="container doc-layout">
+    <nav class="toc" aria-label="On this page">
+      <p class="mono side-label">On this page</p>
+      <ol><li><a href="#before">Before</a></li><li><a href="#after">After</a></li><li><a href="#what-changed-and-why">What changed and why</a></li></ol>
+      <a class="link-mono toc__back" href="/#samples"><span aria-hidden="true">←</span> All samples</a>
+    </nav>
+    <article class="prose">
+<p>This sample compares one endpoint from AIAG's original internal API notes with my rewrite of the same endpoint. The original notes were written for an earlier version of the system. I rewrote them against the current code, for frontend developers who call the backend.</p>
+<h2 id="before"><span class="h-num" aria-hidden="true">§ 01</span>Before</h2>
+<p>The original notes, with their wording unchanged:</p>
+<blockquote data-stamp="Before · original notes, unedited"><p><strong>'/api/similar_questions' Endpoint</strong></p>
+<p><strong>Method: POST</strong></p>
+<p>This endpoint accepts POST requests containing a JSON payload with the following fields:</p>
+<ul><li>question: The user's question for which similar questions are to be found.</li><li>history: Conversation history, if any, which helps provide context for generating responses.</li><li>activeContainer: (Optional) Specifies the active container type. Valid values are 'discussions' or 'asugpt'.</li></ul>
+<p><strong>Response:</strong></p>
+<p>If the request is successful, the endpoint returns a JSON object containing:</p>
+<ul><li>engine_results: Result obtained from the sentence similarity engine.</li><li>gpt_result: Response generated by the GPT model.</li></ul>
+<p>If the activeContainer field is invalid, it returns an error message.</p></blockquote>
+<h2 id="after"><span class="h-num" aria-hidden="true">§ 02</span>After</h2>
+<h3 id="ask-a-question">Ask a question</h3>
+<p><code>POST /api/similar_questions</code></p>
+<p>Checks that the question is about the course, retrieves the most similar passages from the course's knowledge base, and returns a generated answer with its sources.</p>
+<p><strong>Request body (JSON)</strong></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Required</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>question</code></td><td>string</td><td>Yes</td><td>The student's question, in English or Chinese.</td></tr><tr><td><code>history</code></td><td>array of objects</td><td>Yes</td><td>Earlier exchanges in this chat, oldest first. Each object has a <code>Question</code> string and an <code>Answer</code> string. Send <code>[]</code> for a new chat.</td></tr><tr><td><code>language</code></td><td>string</td><td>Yes</td><td><code>en</code> for English or <code>zh</code> for Chinese.</td></tr><tr><td><code>class</code></td><td>string</td><td>No</td><td>The course to search, when the user didn't open AIAG from a Canvas course.</td></tr><tr><td><code>activeContainer</code></td><td>string</td><td>Yes</td><td>Set to <code>asugpt</code>.</td></tr></tbody></table></div>
+<p><strong>Response (status <code>200</code>)</strong></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Field</th><th scope="col">Type</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>gpt_result</code></td><td>string</td><td>The answer text.</td></tr><tr><td><code>engine_results</code></td><td>array</td><td>The passages used as sources. Empty when the question is off topic. Absent when no passages matched.</td></tr><tr><td><code>human_required</code></td><td>boolean</td><td><code>true</code> when no passages matched. The chat interface then offers to post the question to the discussion board.</td></tr></tbody></table></div>
+<p><strong>Example response</strong></p>
+<div class="code-card"><div class="code-card__head"><span class="badge badge--neutral">JSON</span><span class="code-card__title"><span class="code-card__path">Example</span></span><button class="copy-btn" type="button" data-copy><svg class="icon" aria-hidden="true" width="13" height="13"><use href="#i-copy"/></svg><span>Copy</span></button></div><pre class="code" tabindex="0"><code><span class="p">{</span>
+  <span class="k">"gpt_result"</span><span class="p">:</span> <span class="s">"Yes. Any editor works, as long as your services build and run in the required framework."</span><span class="p">,</span>
+  <span class="k">"engine_results"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="k">"message"</span><span class="p">:</span> <span class="s">"Is VS Code OK instead of Visual Studio?"</span><span class="p">,</span> <span class="k">"updated_at"</span><span class="p">:</span> <span class="s">"2024-02-03T18:22:10Z"</span><span class="p">,</span> <span class="k">"replies"</span><span class="p">:</span> <span class="p">[</span><span class="p">]</span> <span class="p">}</span>
+  <span class="p">]</span><span class="p">,</span>
+  <span class="k">"human_required"</span><span class="p">:</span> <span class="n">false</span>
+<span class="p">}</span></code></pre></div>
+<p><strong>Errors</strong></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Status</th><th scope="col">Cause</th><th scope="col">Body</th></tr></thead><tbody><tr><td><code>400</code></td><td><code>activeContainer</code> is missing or not a valid value</td><td><code>{"error": "Invalid activeContainer"}</code></td></tr><tr><td><code>500</code></td><td>A required field is missing</td><td>Error page</td></tr></tbody></table></div>
+<h2 id="what-changed-and-why"><span class="h-num" aria-hidden="true">§ 03</span>What changed and why</h2>
+<ul><li><strong>Every parameter is listed and checked against the code.</strong> The original missed <code>language</code> and <code>class</code>, and called <code>activeContainer</code> optional even though requests fail without it. A reference page is only useful if it's complete and accurate.</li><li><strong>All three outcomes are documented.</strong> The original described only success, so a developer couldn't know about off-topic refusals or the <code>human_required</code> flag that triggers escalation. Reference docs need to cover every case the caller has to handle.</li><li><strong>Tables replace prose lists.</strong> A table with name, type, required, and description lets a developer scan for the one value they need. This follows the Google developer documentation style guide for reference pages.</li><li><strong>Errors have status codes and causes.</strong> "It returns an error message" doesn't tell anyone what to fix. Each error now says when it happens and what the body looks like.</li><li><strong>The page leads with purpose and uses one term per concept.</strong> The rewrite opens with what the endpoint does. It says "passages" throughout, where the original mixed "similar questions" and "sentence similarity engine". It also drops the original's deployment-specific details, which belong in a deployment guide, not an API reference.</li></ul>
+      <nav class="pager" aria-label="More samples">
+        <a class="prev" href="student-quick-start.html"><span class="mono">← Previous · Doc 03</span><strong>AIAG Quick Start for Students</strong></a>
+        <a class="next" href="terminology-sample.html"><span class="mono">Next → · Doc 05</span><strong>AIAG Terminology Guide</strong></a>
+      </nav>
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="mono">© 2026 Mihir Kataria · Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+    <a class="mono" href="#main">Back to top <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+<div class="sr-only" aria-live="polite" id="live"></div>
+</body>
+</html>
