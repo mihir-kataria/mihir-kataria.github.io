@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIAG Quick Start for Students · Mihir Kataria</title>
+<meta name="description" content="A one-page, plain-language guide to asking questions, reading sources, switching language, and getting help from course staff.">
+<meta name="theme-color" content="#0b0d0e">
+<link rel="canonical" href="https://mihir-kataria.github.io/samples/student-quick-start.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AIAG Quick Start for Students · Mihir Kataria">
+<meta property="og:description" content="A one-page, plain-language guide to asking questions, reading sources, switching language, and getting help from course staff.">
+<meta property="og:url" content="https://mihir-kataria.github.io/samples/student-quick-start.html">
+<meta property="og:image" content="https://mihir-kataria.github.io/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement,t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t==='light'||t==='dark'){d.setAttribute('data-theme',t)}var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',d.getAttribute('data-theme')==='light'?'#f5f2eb':'#0b0d0e');d.classList.add('js');if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('motion');setTimeout(function(){if(!window.__mk)d.classList.remove('motion')},3000)}})();</script>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js" defer></script>
+<script src="../js/main.js" defer></script>
+<script src="../js/doc.js" defer></script>
+</head>
+<body class="doc-page">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+</svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="../index.html" aria-label="Mihir Kataria, home">
+      <span class="brand__mark" aria-hidden="true">MK</span>
+      <span class="brand__name">Mihir Kataria</span>
+    </a>
+    <a class="link-mono nav__back" href="/#samples"><span aria-hidden="true">←</span> Back to samples</a>
+    <div class="nav__actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn--sm" href="../assets/Mihir_Kataria_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <header class="doc-hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow"><span class="sec">Doc 03</span><span class="dot">·</span><span>User guide</span></p>
+      <h1 class="doc-title">AIAG Quick Start <em>for Students</em></h1>
+      <div class="doc-meta">
+        <div class="tags"><span class="tag">Students</span><span class="tag">Plain language</span></div>
+        <span class="mono">2 min read</span>
+      </div>
+      <p class="doc-note"><span class="mono">Note</span><span>Adapted from documentation I wrote for AIAG, an AI teaching assistant built at Arizona State University. Some details are simplified.</span></p>
+    </div>
+  </header>
+
+  <div class="container doc-layout">
+    <nav class="toc" aria-label="On this page">
+      <p class="mono side-label">On this page</p>
+      <ol><li><a href="#ask-a-question">Ask a question</a></li><li><a href="#read-the-answer-and-its-sources">Read the answer and its sources</a></li><li><a href="#change-the-language">Change the language</a></li><li><a href="#ask-with-your-voice">Ask with your voice</a></li><li><a href="#post-a-question-aiag-can-t-answer">Post a question AIAG can't answer</a></li></ol>
+      <a class="link-mono toc__back" href="/#samples"><span aria-hidden="true">←</span> All samples</a>
+    </nav>
+    <article class="prose">
+<p>AIAG is your course's AI teaching assistant. It answers questions from your course's own materials and shows you where each answer came from. This page shows you how to ask a question, check the answer, change the language, use your voice, and get help from a person when AIAG can't answer.</p>
+<p>To start, open AIAG from your course menu in Canvas. You don't need a separate login.</p>
+<h2 id="ask-a-question"><span class="h-num" aria-hidden="true">§ 01</span>Ask a question</h2>
+<ol><li>Select the box that says <strong>Enter a question...</strong>.</li><li>Type your question.</li><li>Select the send button, which looks like a paper airplane.</li></ol>
+<p>While AIAG works, you see <strong>Typing...</strong>. The answer then appears under your question.</p>
+<p>You can ask about course content, assignments, course policies, or how to use AIAG. AIAG doesn't answer questions unrelated to your course. It also doesn't give exam dates or deadlines, so check your syllabus or Canvas for those.</p>
+<h2 id="read-the-answer-and-its-sources"><span class="h-num" aria-hidden="true">§ 02</span>Read the answer and its sources</h2>
+<p>Each answer has two tabs:</p>
+<ul><li><strong>Response</strong> shows AIAG's answer.</li><li><strong>Source</strong> shows the course material AIAG used, such as past discussion posts and their replies, with the date of each one.</li></ul>
+<p>Open <strong>Source</strong> when you want to check an answer or read the original posts.</p>
+<h2 id="change-the-language"><span class="h-num" aria-hidden="true">§ 03</span>Change the language</h2>
+<p>At the top of the page, open the language menu and choose <strong>English</strong> or <strong>中文</strong> (Chinese). Menus and buttons switch language right away.</p>
+<p>AIAG answers in the language you ask in.</p>
+<h2 id="ask-with-your-voice"><span class="h-num" aria-hidden="true">§ 04</span>Ask with your voice</h2>
+<ol><li>Select the microphone button at the left of the question box.</li><li>If your browser asks to use your microphone, allow it.</li><li>Say your question. If the language is set to <strong>中文</strong>, speak Mandarin.</li><li>Select the microphone button again to stop. Your words appear in the question box.</li><li>Check the text, fix any mistakes, and then send it.</li></ol>
+<p>If you see <strong>Please enable microphone access to use this feature.</strong>, turn on microphone access for this site in your browser settings and try again.</p>
+<h2 id="post-a-question-aiag-can-t-answer"><span class="h-num" aria-hidden="true">§ 05</span>Post a question AIAG can't answer</h2>
+<p>When AIAG can't find an answer in your course materials, it offers to post your question to the course discussion board, where your instructor or TA can answer it.</p>
+<ol><li>In the <strong>Would you like to ask a human?</strong> window, select <strong>Confirm</strong>. To skip posting, select <strong>Cancel</strong>.</li><li>In the <strong>Create New Discussion</strong> window, type a short title in <strong>Topic Title</strong>.</li><li>Check the box under the title. Your question is already there, and you can edit it.</li><li>Select <strong>Submit</strong>. You can't select <strong>Submit</strong> until both boxes have text.</li></ol>
+<p>A message at the top of the chat confirms that your question was posted. Check the course discussion board for an answer from your instructor or TA.</p>
+      <nav class="pager" aria-label="More samples">
+        <a class="prev" href="api-reference-sample.html"><span class="mono">← Previous · Doc 02</span><strong>AIAG Backend API: Selected Endpoints</strong></a>
+        <a class="next" href="before-and-after-api-docs.html"><span class="mono">Next → · Doc 04</span><strong>Before and After: API Documentation</strong></a>
+      </nav>
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="mono">© 2026 Mihir Kataria · Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+    <a class="mono" href="#main">Back to top <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+<div class="sr-only" aria-live="polite" id="live"></div>
+</body>
+</html>

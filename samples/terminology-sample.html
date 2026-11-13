@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIAG Terminology Guide · Mihir Kataria</title>
+<meta name="description" content="The single-term rules and acronym list I set so every page used the same words.">
+<meta name="theme-color" content="#0b0d0e">
+<link rel="canonical" href="https://mihir-kataria.github.io/samples/terminology-sample.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AIAG Terminology Guide · Mihir Kataria">
+<meta property="og:description" content="The single-term rules and acronym list I set so every page used the same words.">
+<meta property="og:url" content="https://mihir-kataria.github.io/samples/terminology-sample.html">
+<meta property="og:image" content="https://mihir-kataria.github.io/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement,t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t==='light'||t==='dark'){d.setAttribute('data-theme',t)}var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',d.getAttribute('data-theme')==='light'?'#f5f2eb':'#0b0d0e');d.classList.add('js');if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('motion');setTimeout(function(){if(!window.__mk)d.classList.remove('motion')},3000)}})();</script>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js" defer></script>
+<script src="../js/main.js" defer></script>
+<script src="../js/doc.js" defer></script>
+</head>
+<body class="doc-page">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+</svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="../index.html" aria-label="Mihir Kataria, home">
+      <span class="brand__mark" aria-hidden="true">MK</span>
+      <span class="brand__name">Mihir Kataria</span>
+    </a>
+    <a class="link-mono nav__back" href="/#samples"><span aria-hidden="true">←</span> Back to samples</a>
+    <div class="nav__actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn--sm" href="../assets/Mihir_Kataria_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <header class="doc-hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow"><span class="sec">Doc 05</span><span class="dot">·</span><span>Style guide</span></p>
+      <h1 class="doc-title">AIAG <em>Terminology Guide</em></h1>
+      <div class="doc-meta">
+        <div class="tags"><span class="tag">Consistency</span><span class="tag">Style</span></div>
+        <span class="mono">2 min read</span>
+      </div>
+      <p class="doc-note"><span class="mono">Note</span><span>Adapted from documentation I wrote for AIAG, an AI teaching assistant built at Arizona State University. Some details are simplified.</span></p>
+    </div>
+  </header>
+
+  <div class="container doc-layout">
+    <nav class="toc" aria-label="On this page">
+      <p class="mono side-label">On this page</p>
+      <ol><li><a href="#acronyms">Acronyms</a></li></ol>
+      <a class="link-mono toc__back" href="/#samples"><span aria-hidden="true">←</span> All samples</a>
+    </nav>
+    <article class="prose">
+<p>This page shows the one term chosen for each AIAG concept, so every page uses the same words. It's for anyone writing or editing the AIAG docs.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Use</th><th scope="col">Don't use</th><th scope="col">Meaning and notes</th></tr></thead><tbody><tr><td>AIAG</td><td>ASU GPT, ASUGPT, GPT Bot</td><td>The product. Define once per page as "AIAG (ASU Instructor Assistant GPT)" where needed. "The bot" is acceptable in the student guide.</td></tr><tr><td>admin panel</td><td>admin control panel, instructor control panel</td><td>The instructor pages for connecting a course and choosing materials.</td></tr><tr><td>chat</td><td>thread, conversation, chat session</td><td>One saved sequence of questions and answers in the sidebar.</td></tr><tr><td>teaching staff</td><td>course staff, instructional team, moderators</td><td>Instructors and TAs together. Use "instructor" when only instructors can do something. In the student guide, say "your instructor or TA".</td></tr><tr><td>knowledge base</td><td>vector database (as a concept), dataset</td><td>All the content AIAG can retrieve for one course.</td></tr><tr><td>passage</td><td>match, engine result</td><td>One retrieved item: a discussion post, a reply, or a document chunk.</td></tr><tr><td>sources</td><td>citations, references</td><td>The passages shown to students in the <strong>Source</strong> tab.</td></tr><tr><td>relevance check</td><td>relevance filter, classifier</td><td>The LLM call that decides whether a question is about the course.</td></tr><tr><td>escalation</td><td>HITL post, ask a human</td><td>Posting an unanswered question to the course discussion board. In technical docs, define "human-in-the-loop (HITL)" once. In the student guide, say "post your question to the discussion board".</td></tr><tr><td>discussion board</td><td>discussion forum</td><td>Canvas Discussions or Ed Discussion.</td></tr><tr><td>Chinese, Mandarin</td><td>Simplified Chinese, zh (in prose)</td><td>Use "Chinese" for the language setting and written text. Use "Mandarin" only for spoken voice input.</td></tr></tbody></table></div>
+<h2 id="acronyms"><span class="h-num" aria-hidden="true">§ 01</span>Acronyms</h2>
+<p>Define each acronym on first use on each page.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Acronym</th><th scope="col">Expansion</th></tr></thead><tbody><tr><td>API</td><td>application programming interface</td></tr><tr><td>HITL</td><td>human-in-the-loop</td></tr><tr><td>LLM</td><td>large language model</td></tr><tr><td>LMS</td><td>learning management system</td></tr><tr><td>LTI</td><td>Learning Tools Interoperability</td></tr><tr><td>OCR</td><td>optical character recognition</td></tr><tr><td>OIDC</td><td>OpenID Connect</td></tr><tr><td>RAG</td><td>retrieval-augmented generation</td></tr></tbody></table></div>
+      <nav class="pager" aria-label="More samples">
+        <a class="prev" href="before-and-after-api-docs.html"><span class="mono">← Previous · Doc 04</span><strong>Before and After: API Documentation</strong></a>
+        <a class="next" href="intellij-javafx-setup.html"><span class="mono">Next → · Doc 06</span><strong>Installing IntelliJ IDEA and JavaFX</strong></a>
+      </nav>
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="mono">© 2026 Mihir Kataria · Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+    <a class="mono" href="#main">Back to top <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+<div class="sr-only" aria-live="polite" id="live"></div>
+</body>
+</html>
